@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daju-soft | DevOps, Cloud & Architecture Consulting</title>
+    <meta
+      name="description"
+      content="Daju-soft helps startups and established businesses with DevOps, cloud, and architecture consulting."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow" aria-hidden="true"></div>
+    <header class="container header">
+      <a class="brand" href="#">Daju-soft</a>
+      <a class="btn btn-outline" href="#contact">Let’s Talk</a>
+    </header>
+
+    <main>
+      <section class="container hero">
+        <p class="eyebrow">Engineering Clarity at Scale</p>
+        <h1>DevOps, Cloud & Architecture Consulting for Teams That Ship.</h1>
+        <p class="lead">
+          We partner with startups and established businesses to design resilient
+          platforms, streamline delivery pipelines, and modernize cloud architecture.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#services">Explore Services</a>
+          <a class="btn btn-outline" href="#contact">Book a Discovery Call</a>
+        </div>
+      </section>
+
+      <section id="services" class="container section">
+        <h2>What we do</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>DevOps Acceleration</h3>
+            <p>
+              CI/CD optimization, infrastructure automation, and developer experience
+              improvements to ship faster with confidence.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Cloud Strategy</h3>
+            <p>
+              Practical cloud adoption and optimization across AWS, Azure, and GCP with
+              cost, security, and scalability in balance.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Architecture Advisory</h3>
+            <p>
+              System design and modernization planning for products that need reliability,
+              performance, and room to grow.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="container section cta">
+        <h2>Ready to build the next stage of your platform?</h2>
+        <p>
+          Let’s align your product goals with scalable engineering foundations.
+        </p>
+        <a class="btn" href="mailto:hello@daju-soft.com">hello@daju-soft.com</a>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>© <span id="year"></span> Daju-soft. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
