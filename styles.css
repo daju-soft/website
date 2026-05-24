@@ -40,10 +40,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
   padding: 1.25rem 0;
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   color: var(--text);
   text-decoration: none;
   font-size: 1.2rem;
@@ -51,29 +55,42 @@ body {
   letter-spacing: 0.03em;
 }
 
-.project-links {
+.brand img,
+.service-note img {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex: 0 0 auto;
+}
+
+.header-actions {
   display: flex;
   gap: 0.5rem;
   margin-left: auto;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.project-links a {
+.nav-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.35rem;
   color: var(--muted);
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 600;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 999px;
-  padding: 0.38rem 0.72rem;
-  background: rgba(255, 255, 255, 0.025);
-  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+  padding: 0.5rem 0.85rem;
+  background: rgba(255, 255, 255, 0.035);
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
 }
 
-.project-links a:hover {
+.nav-pill:hover {
   color: var(--text);
   border-color: rgba(89, 212, 196, 0.45);
   background: rgba(89, 212, 196, 0.08);
+  transform: translateY(-1px);
 }
 
 .hero {
@@ -105,6 +122,16 @@ h1 {
   margin: 1.2rem 0 0;
   max-width: 62ch;
   color: var(--muted);
+}
+
+.service-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 1rem 0 0;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 .hero-actions {
@@ -198,8 +225,7 @@ h1 {
     gap: 0.75rem;
   }
 
-  .project-links {
-    order: 3;
+  .header-actions {
     width: 100%;
     margin-left: 0;
   }
